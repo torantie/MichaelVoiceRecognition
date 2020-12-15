@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MichaelVoiceRecognition.iml" filepath="$PROJECT_DIR$/MichaelVoiceRecognition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MichaelVoiceRecognition.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MichaelVoiceRecognition.app.iml" />
+    </modules>
+  </component>
+</project>

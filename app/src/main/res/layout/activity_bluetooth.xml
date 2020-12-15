@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.michi.michaelvoicerecognition.BluetoothActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="81dp">
+
+        <Button
+            android:id="@+id/wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="287dp"
+            android:layout_marginEnd="6dp"
+            android:text="WAIT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bluetooth"
+            app:layout_constraintTop_toBottomOf="@+id/discoveredDevices"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+        <Button
+            android:id="@+id/bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:text="bluetooth"
+            app:layout_constraintEnd_toStartOf="@+id/wait"
+            app:layout_constraintStart_toEndOf="@+id/search"
+            app:layout_constraintTop_toBottomOf="@+id/discoveredDevices"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="20dp"
+            android:text="search"
+            app:layout_constraintBottom_toTopOf="@+id/pairedDevices"
+            app:layout_constraintEnd_toStartOf="@+id/bluetooth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discoveredDevices"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="176dp"
+            tools:text="@android:string/search_go" />
+
+        <ListView
+            android:id="@+id/discoveredDevices"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/wait"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <ListView
+            android:id="@+id/pairedDevices"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="103dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginStart="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
